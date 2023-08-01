@@ -8,7 +8,6 @@ import {
   Button,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
 import mystyle from "../Style.module.css";
 import SideDrows from "./SideDrows";
@@ -63,11 +62,6 @@ const Navbar = () => {
             <Link to="/signin">
               <Button>SignUp</Button>
             </Link>
-
-            <Button sx={{ display: { xs: "none", md: "block" } }}>
-              <SearchIcon />
-              <input type="text" placeholder="Search.."></input>
-            </Button>
           </Toolbar>
         </Container>
       </AppBar>

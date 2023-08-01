@@ -19,7 +19,7 @@ export default function SideDrows({ children }) {
   });
   const sideMenu = [
     {
-      url: "/home",
+      url: "/",
       nav: "Home",
     },
     {
