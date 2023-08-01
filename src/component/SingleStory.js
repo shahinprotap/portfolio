@@ -50,7 +50,7 @@ const SingleStory = () => {
       id: 5,
       title: "SEO",
       content:
-        "Search engine optimization: the process of making your site better for search engines. Also the job title of a person who does this for a living ",
+        "Search engine optimization: the process of making your site better for search engine. Also the job title of a person who does this for a living ",
       img: logo5,
     },
     {
