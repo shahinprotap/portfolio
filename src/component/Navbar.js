@@ -11,6 +11,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
 import mystyle from "../Style.module.css";
+import SideDrows from "./SideDrows";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [valu, setValu] = useState();
@@ -25,8 +27,9 @@ const Navbar = () => {
       >
         <Container>
           <Toolbar>
-            <MenuIcon color="action" />
-
+            <SideDrows>
+              <MenuIcon color="action" />
+            </SideDrows>
             <Typography variant="h5" className={mystyle.navtitle}>
               Shahin protap
             </Typography>
@@ -38,14 +41,28 @@ const Navbar = () => {
               indicatorColor="secondary"
               sx={{ marginLeft: "auto", display: { xs: "none", md: "block" } }}
             >
-              <Tab label="home" />
-              <Tab label="about" />
-              <Tab label="contact" />
-              <Tab label="service" />
-              <Tab label="news" />
+              <Link to="/">
+                <Tab style={{ color: "white" }} label="home" />
+              </Link>
+              <Link style={{ color: "white" }} to="/service">
+                <Tab label="service" />
+              </Link>
+              <Link to="/contact">
+                <Tab style={{ color: "white" }} label="contact" />
+              </Link>
+              <Link to="/about">
+                <Tab style={{ color: "white" }} label="about" />
+              </Link>
+              <Link style={{ color: "white" }} to="/news">
+                <Tab label="news" />
+              </Link>
             </Tabs>
-            <Button>LogIn</Button>
-            <Button>SignUp</Button>
+            <Link to="/login">
+              <Button>LogIn</Button>
+            </Link>
+            <Link to="/signin">
+              <Button>SignUp</Button>
+            </Link>
 
             <Button sx={{ display: { xs: "none", md: "block" } }}>
               <SearchIcon />

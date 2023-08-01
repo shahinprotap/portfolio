@@ -17,6 +17,7 @@ import {
   LinkedIn,
   Pinterest,
 } from "@mui/icons-material";
+
 // import mystyle from "./style.module.css"
 
 const About = () => {
