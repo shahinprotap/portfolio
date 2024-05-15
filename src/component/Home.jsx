@@ -19,3 +19,15 @@ const Home = () => {
 };
 
 export default Home;
+
+// Closure 
+
+// function getCapital(capital){
+//     return function (interest){
+//         return(capital * interest) / 100
+//     }
+// }
+
+// const busnessOne = getCapital(100000)
+// console.log(busnessOne)
+// busnessOne(25)
