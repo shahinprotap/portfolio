@@ -116,3 +116,7 @@ export default Home;
 // const number = [1, 2, 3, 4];
 // number.reverse();
 // console.log(number)
+
+// sob Arry ek sathe korar niyom
+// const arr = ["shahin", "alam", "hasan", ["raju", "toha",["taibur"]], "baba"];
+// console.log(arr.flat(Infinity))
