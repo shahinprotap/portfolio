@@ -31,3 +31,6 @@ export default Home;
 // const busnessOne = getCapital(100000)
 // console.log(busnessOne)
 // busnessOne(25)
+
+
+
